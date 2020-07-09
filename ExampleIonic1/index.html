@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>My Shop</title>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+</head>
+
+<body>
+    <ion-app>
+        <ion-header>
+            <ion-toolbar color="primary">
+                <ion-title>My Cart</ion-title>
+            </ion-toolbar>
+        </ion-header>
+        <ion-content>
+            <ion-grid>
+                <ion-row>
+                    <ion-col size-md="6" offset-md="3">
+                            <ion-app>
+                                    <ion-header translucent>
+                                      <ion-toolbar>
+                                        
+                                      </ion-toolbar>
+                                    </ion-header>,
+                                    <ion-content fullscreen class="ion-padding">
+                                      <ion-alert-controller></ion-alert-controller>
+                                     
+                                    </ion-content>
+                                  </ion-app>
+                        <ion-card>
+                            <ion-card-header>
+                                <ion-card-title>Cart</ion-card-title>
+                            </ion-card-header>
+                            <ion-card-content>
+                                <ion-item>
+                                    <ion-label position="floating">Product title</ion-label>
+                                    <ion-input type="text" id="input-product"></ion-input>
+                                </ion-item>
+                                <ion-item>
+                                    <ion-label position="floating">Price</ion-label>
+                                    <ion-input type="number" id="input-price"></ion-input>
+                                </ion-item>
+                                <ion-item>
+                                    <ion-label position="floating">Amount</ion-label>
+                                    <ion-input type="number" id="input-amount"></ion-input>
+                                </ion-item>
+                                <div margin-vertical text-right>
+                                    <ion-button fill="outline" color="danger" id="btn-clear">
+                                        <ion-icon slot="start" name="close"></ion-icon>Clear
+                                    </ion-button>
+                                    
+                                    <ion-button id="btn-add">
+                                        <ion-icon slot="start" name="add"></ion-icon>
+                                        Add Product
+                                    </ion-button>
+                                    
+                                </div>
+                               
+                            </ion-card-content>
+                        </ion-card>
+                        
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col size-md="6" offset-md="3">
+                        <ion-list id="list-cart"></ion-list>
+                    </ion-col>
+                </ion-row>
+                <ion-item>
+                        <ion-label  id ="totalPrice">Total: </ion-label>
+                    </ion-item>
+            </ion-grid>
+        </ion-content>
+    </ion-app>
+    <script src="app.js"></script>
+</body>
+
+</html>
