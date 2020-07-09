@@ -83,6 +83,7 @@ buttonClear.addEventListener('click', () => {
         }else if (enteredAmount.trim().length <=0){
             alert.message = 'Enter amount';
         }
+
         
          if(enteredProduct.trim().length <= 0){
             alert.message = 'Enter product name';
